@@ -286,7 +286,7 @@ st.markdown("""
 class DhanConfig:
     client_id: str = "1100480354"
     access_token: str = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzY1NjM1MzU2LCJhcHBfaWQiOiJjOTNkM2UwOSIsImlhdCI6MTc2NTU0ODk1NiwidG9rZW5Db25zdW1lclR5cGUiOiJBUFAiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDQ4MDM1NCJ9.NfNmwcnR66ebZQb9ch9TJiuEngX7brGChb8fNUZ26zGMjOcmA-n13peZQE5D-QTpu7fgWuoOZMLvPchMZsFmIQ"
-    expiry_time: str = "2026-11-13T19:45:56"
+    expiry_time: str = "2027-11-13T19:45:56"
 
 DHAN_SECURITY_IDS = {
     "NIFTY": 13, "BANKNIFTY": 25, "FINNIFTY": 27, "MIDCPNIFTY": 442, "SENSEX": 51
