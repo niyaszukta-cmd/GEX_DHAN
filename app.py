@@ -285,7 +285,7 @@ st.markdown("""
 @dataclass
 class DhanConfig:
     client_id: str = "1100480354"
-    access_token: str = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzY1NzcyMzUyLCJhcHBfaWQiOiJjOTNkM2UwOSIsImlhdCI6MTc2NTY4NTk1MiwidG9rZW5Db25zdW1lclR5cGUiOiJBUFAiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDQ4MDM1NCJ9.BNrEmvp_zrhKwqoFX0hweGRgjwYx1PiTjTd_JORzoHNqP3nfFcvmdKTeIQySRtiZsqu_gu--35L3Ose20NAqDA"
+    access_token: str = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzY1ODY4MjUwLCJhcHBfaWQiOiJjOTNkM2UwOSIsImlhdCI6MTc2NTc4MTg1MCwidG9rZW5Db25zdW1lclR5cGUiOiJBUFAiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDQ4MDM1NCJ9.PN4ersyCLxbgtjtsaoBiyOvE9Oj-bxZ5F06xlgMuOdIcmRzFoUjZYAcS7C_FLf4Ggb5JTeUXkcsWC27ZY58yBA"
     expiry_time: str = "2026-12-11T19:45:56"
 
 DHAN_SECURITY_IDS = {
