@@ -30,6 +30,23 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Force sidebar to stay visible
+st.markdown("""
+<style>
+    [data-testid="stSidebar"][aria-expanded="false"] {
+        display: block;
+        min-width: 300px !important;
+        transform: translateX(0) !important;
+    }
+    [data-testid="stSidebar"] {
+        min-width: 300px !important;
+    }
+    [data-testid="collapsedControl"] {
+        display: none !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Professional Dark Theme CSS
 st.markdown("""
 <style>
@@ -285,8 +302,8 @@ st.markdown("""
 @dataclass
 class DhanConfig:
     client_id: str = "1100480354"
-    access_token: str = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzY2MDU1NDA2LCJhcHBfaWQiOiJjOTNkM2UwOSIsImlhdCI6MTc2NTk2OTAwNiwidG9rZW5Db25zdW1lclR5cGUiOiJBUFAiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDQ4MDM1NCJ9.ehq9obDqz9DtUyttf5UBriJqnNMUMsCCLfJ9EJy-oXz3vQAMrbw9w_g83RCtOuHW_7JHA5uIpqIQ4UNbJIB46w"
-    expiry_time: str = "2025-12-18T16:26:46"
+    access_token: str = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkaGFuIiwicGFydG5lcklkIjoiIiwiZXhwIjoxNzY1NDgzNzg3LCJhcHBfaWQiOiI4NjFmZjMyMSIsImlhdCI6MTc2NTM5NzM4NywidG9rZW5Db25zdW1lclR5cGUiOiJBUFAiLCJ3ZWJob29rVXJsIjoiIiwiZGhhbkNsaWVudElkIjoiMTEwMDQ4MDM1NCJ9.XDHIi24skiRDG3Uc6CFA-eZVadHfuPIounKW0eFiFpJrRoAplaGS2sXzpI5c0ndrmL-Ee72NnBqqyEG2UPqjKg"
+    expiry_time: str = "2025-12-12T01:39:47"
 
 DHAN_SECURITY_IDS = {
     "NIFTY": 13, "BANKNIFTY": 25, "FINNIFTY": 27, "MIDCPNIFTY": 442, "SENSEX": 51
